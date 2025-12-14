@@ -15,28 +15,28 @@ export interface Airdrop {
 }
 
 export const AIRDROPS: Airdrop[] = [
-  // --- LIGNE 1 : LES INCONTOURNABLES (Cash Machine) ---
+  // --- ROW 1 : MUST DO (Cash Machines) ---
   {
     id: 'base-mainnet',
     name: 'Base',
     category: 'L2 Coinbase',
     potential: '$$$',
-    status: 'Hype Totale',
-    description: 'Le réseau n°1 du moment. Frais quasi nuls ($0.01).',
+    status: 'Max Hype',
+    description: 'The #1 network right now. Near-zero fees ($0.01).',
     tasks: [
       {
         id: 't1',
-        title: 'STEP 1 : Bridge ETH vers Base (Orbiter)',
+        title: 'STEP 1: Bridge ETH to Base (Orbiter)',
         link: 'https://www.orbiter.finance/?channel=0x8d7e6a1fB35e27246272590281B9B2f21758C354'
       },
       {
         id: 't2',
-        title: 'STEP 2 : Acheter un token sur Aerodrome',
+        title: 'STEP 2: Buy a token on Aerodrome',
         link: 'https://aerodrome.finance/'
       },
       {
         id: 't3',
-        title: 'STEP 3 : Minter un NFT "Onchain Summer"',
+        title: 'STEP 3: Mint an "Onchain Summer" NFT',
         link: 'https://onchain.summer.xyz/'
       }
     ]
@@ -46,22 +46,22 @@ export const AIRDROPS: Airdrop[] = [
     name: 'Scroll',
     category: 'Layer 2 (ZK)',
     potential: '$$$',
-    status: 'Priorité Haute',
-    description: 'Snapshot imminent. Il faut du volume on-chain.',
+    status: 'High Priority',
+    description: 'Snapshot imminent. On-chain volume required.',
     tasks: [
       {
         id: 't1',
-        title: 'STEP 1 : Bridge via Owlto (Moins cher)',
+        title: 'STEP 1: Bridge via Owlto (Cheaper)',
         link: 'https://owlto.finance/?ref=0x8d7e6a1fB35e27246272590281B9B2f21758C354'
       },
       {
         id: 't2',
-        title: 'STEP 2 : Sécuriser (Bridge Officiel 1 fois)',
+        title: 'STEP 2: Secure (Official Bridge once)',
         link: 'https://scroll.io/bridge'
       },
       {
         id: 't3',
-        title: 'STEP 3 : Prêter sur Aave (Lending)',
+        title: 'STEP 3: Lend on Aave',
         link: 'https://app.aave.com/?marketName=proto_scroll_v3'
       }
     ]
@@ -72,48 +72,48 @@ export const AIRDROPS: Airdrop[] = [
     category: 'Layer 2',
     potential: '$$$$',
     status: 'Linea Surge',
-    description: 'Soutenu par ConsenSys (MetaMask). Très solide.',
+    description: 'Backed by ConsenSys (MetaMask). Very solid.',
     tasks: [
       {
         id: 't1',
-        title: 'STEP 1 : Bridge Rapide vers Linea (Owlto)',
+        title: 'STEP 1: Fast Bridge to Linea (Owlto)',
         link: 'https://owlto.finance/?ref=0x8d7e6a1fB35e27246272590281B9B2f21758C354'
       },
       {
         id: 't2',
-        title: 'STEP 2 : Swap ETH/USDC (SyncSwap)',
+        title: 'STEP 2: Swap ETH/USDC (SyncSwap)',
         link: 'https://syncswap.xyz/'
       },
       {
         id: 't3',
-        title: 'STEP 3 : Lending sur Mendi Finance',
+        title: 'STEP 3: Lending on Mendi Finance',
         link: 'https://mendi.finance/'
       }
     ]
   },
 
-  // --- LIGNE 2 : LES PARIS FUTURS (Investissement) ---
+  // --- ROW 2 : FUTURE BETS (Investment) ---
   {
     id: 'zksync-era',
     name: 'ZkSync Era',
     category: 'Layer 2',
     potential: '$$',
     status: 'Final Stage',
-    description: 'Le géant des L2. Maximisez le nombre de contrats uniques.',
+    description: 'The L2 giant. Maximize unique contract interactions.',
     tasks: [
       {
         id: 't1',
-        title: 'STEP 1 : Bridge via Orbiter (Points)',
+        title: 'STEP 1: Bridge via Orbiter (Points)',
         link: 'https://www.orbiter.finance/?channel=0x8d7e6a1fB35e27246272590281B9B2f21758C354'
       },
       {
         id: 't2',
-        title: 'STEP 2 : Swap sur Maverick',
+        title: 'STEP 2: Swap on Maverick',
         link: 'https://mav.xyz/'
       },
       {
         id: 't3',
-        title: 'STEP 3 : Minter un NFT (Tevaera)',
+        title: 'STEP 3: Mint an NFT (Tevaera)',
         link: 'https://tevaera.com/'
       }
     ]
@@ -124,21 +124,21 @@ export const AIRDROPS: Airdrop[] = [
     category: 'Layer 1',
     potential: '$$$$$',
     status: 'Early Access',
-    description: 'Le "Solana Killer". Soyez prêt pour le lancement.',
+    description: 'The "Solana Killer". Be ready for launch.',
     tasks: [
       {
         id: 't1',
-        title: 'Préparer des ETH sur Mainnet (Via Owlto)',
+        title: 'Prepare ETH on Mainnet (Via Owlto)',
         link: 'https://owlto.finance/?ref=0x8d7e6a1fB35e27246272590281B9B2f21758C354'
       },
       {
         id: 't2',
-        title: 'Rejoindre le Discord',
+        title: 'Join Discord',
         link: 'https://discord.gg/monad'
       },
       {
         id: 't3',
-        title: 'Suivre sur Twitter (X)',
+        title: 'Follow on Twitter (X)',
         link: 'https://twitter.com/monad_xyz'
       }
     ]
@@ -149,21 +149,21 @@ export const AIRDROPS: Airdrop[] = [
     category: 'NFT Chain',
     potential: '$$',
     status: 'Low Cost',
-    description: 'Idéal pour les petits budgets. Très facile à farmer.',
+    description: 'Ideal for small budgets. Very easy to farm.',
     tasks: [
       {
         id: 't1',
-        title: 'STEP 1 : Bridge vers Zora (Owlto)',
+        title: 'STEP 1: Bridge to Zora (Owlto)',
         link: 'https://owlto.finance/?ref=0x8d7e6a1fB35e27246272590281B9B2f21758C354'
       },
       {
         id: 't2',
-        title: 'STEP 2 : Minter un NFT gratuit',
+        title: 'STEP 2: Mint a free NFT',
         link: 'https://zora.co/'
       },
       {
         id: 't3',
-        title: 'STEP 3 : Créer votre profil Zora',
+        title: 'STEP 3: Create your Zora profile',
         link: 'https://zora.co/create'
       }
     ]

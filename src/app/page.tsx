@@ -1,7 +1,13 @@
-import { AIRDROPS } from '@/data';
+'use client';
+
+import { useState } from 'react';
+import { AIRDROPS, Airdrop } from '@/data';
 import { AirdropCard } from '@/components/AirdropCard';
+import { AirdropModal } from '@/components/AirdropModal';
 
 export default function Home() {
+  const [selectedAirdrop, setSelectedAirdrop] = useState<Airdrop | null>(null);
+
   return (
     <div className="pb-20">
       <header className="py-16 md:py-24 max-w-2xl">
@@ -17,9 +23,21 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {AIRDROPS.map((airdrop) => (
-          <AirdropCard key={airdrop.id} airdrop={airdrop} />
+          <AirdropCard
+            key={airdrop.id}
+            airdrop={airdrop}
+            onClick={() => setSelectedAirdrop(airdrop)}
+          />
         ))}
       </div>
+
+      {/* Modal - Conditionally Rendered */}
+      {selectedAirdrop && (
+        <AirdropModal
+          airdrop={selectedAirdrop}
+          onClose={() => setSelectedAirdrop(null)}
+        />
+      )}
     </div>
   );
 }
